@@ -1,0 +1,89 @@
+<%= @user.discipline.name if @user.discipline -%><br />
+<%= @user.business_name %><br />
+<%= @user.business_address %><br />
+<%= "#{@user.business_address2}<br />" %>
+<%= "#{@user.business_city}, " if @user.business_city != '' %> <%= @user.business_state %> <%= @user.business_zip %><br />
+<%= link_to 'Download vCard', generate_vcard_user_path(@user) %>
+
+<table id="data_list" style="margin-top: 20px;">
+  <caption>Contact Information</caption>
+  <thead>
+  <tr>
+    <th style="width: 150px;">&nbsp;</th><th>Primary</th><th>Secondary</th>
+  </tr>
+  </thead>
+  <tr>
+    <td class="label"><label for="user_phone_primary">Phone</label></td>
+    <td><%= @user.phone %></td>
+    <td><%= @user.phone_secondary %></td>
+  </tr>
+  <tr>
+    <td class="label"><label for="user_fax">Fax</label></td>
+    <td><%= @user.business_fax %></td>
+    <td>NA</td>
+  </tr>
+
+  <tr>
+    <td class="label"><label for="user_website">Website</label></td>
+    <td><%= link_to(@user.website, @user.website) if @user.website %></td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td class="label"><label for="user_email_primary">Email</label></td>
+    <td><%= mail_to @user.email %></td>
+    <td><%= mail_to @user.email_secondary %></td>
+  </tr>
+  <tr>
+    <td class="label"><label for="user_im_primary">Instant Message</label></td>
+    <td><%= @user.im %></td>
+    <td><%= @user.im_secondary %></td>
+  </tr>
+</table>	
+
+<% if can_manage_users? || current_user == @user %>
+<table border="0" width="100%" style="margin-top: 20px;">
+	<tr>
+		<td>
+			<table id="data_list" width="95%">
+			  <caption>Your Upcoming Events</caption>
+			  <thead>
+			  <tr><th style="width: 150px;">Name</th></tr>
+			  </thead>
+			  <tr>
+			    <td>			    	
+						<%= render :partial => '/users/event_list', :locals => {:event_list => @user.find_my_upcoming_events} %>
+			    </td>
+			  </tr>
+			</table>			
+		</td>
+		<td>			
+			<table id="data_list" width="95%">
+			  <caption>Events you have attended</caption>
+			  <thead>
+			  <tr><th style="width: 150px;">Name</th></tr>
+			  </thead>
+			  <tr>
+			    <td>
+						<%= render :partial => '/users/event_list', :locals => {:event_list => @user.find_my_past_events} %>
+					</td>
+			  </tr>
+			</table>			
+		</td>
+	</tr>
+</table>
+
+<% if can_manage_users? %>
+<h3 style="margin-bottom: 2px;">Admin Preferences</h3>
+<div id="admin_preferences">
+	This member <strong>can <%= "not" if !@user.can_manage_content? %></strong> manage site content.<br />
+	This member <strong>can <%= "not" if !@user.can_manage_users? %></strong> manage members information.<br />
+	This member <strong>is  <%= "not" if !@user.is_active? %></strong> active.<br />
+</div>
+<% end %>
+
+<h3 style="margin-bottom: 2px;">Personal Preferences</h3>
+<div id="personal_preferences">
+	The general public <strong>is <%= "not" if !@user.show_personal_info %></strong> allowed to view my profile.<br />
+	<!-- <%= @user.send_emails %> Email me official announcements.<br /> -->
+</div>
+<% end %>

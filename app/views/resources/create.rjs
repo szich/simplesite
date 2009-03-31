@@ -1,0 +1,4 @@
+page.insert_html :bottom, :resource_list, :partial => 'resources/resource_list', :locals => {:r => @resource }
+page.visual_effect :highlight, :resource_list, :duration => 5
+#page << 'lightbox.prototype.initialize();'
+page << 'lightbox.prototype.deactivate();'

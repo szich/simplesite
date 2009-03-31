@@ -1,0 +1,1618 @@
+# Logfile created on Sat Jun 09 18:14:45 -0700 2007 by /
+  [4;36;1mSQL (0.000364)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002820)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.032334)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mEntry Columns (0.069443)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.002550)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002242)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002900)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002838)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002471)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002584)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002686)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003071)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002455)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002239)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002950)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002780)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002750)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002938)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002970)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.018059)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.010448)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002669)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003046)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003168)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000462)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000920)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.000672)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.000901)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001103)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mSQL (0.000751)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Update (0.000793)[0m   [0;1mUPDATE entries SET `textfile` = NULL, `image` = 'kerb.jpg' WHERE `id` = 1[0m
+  [4;35;1mEntry Update (0.000637)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000939)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002325)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002197)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003077)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002743)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002716)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002158)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003590)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003044)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000534)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000825)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000667)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000902)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002367)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002223)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002791)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002786)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002670)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.018350)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003244)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003535)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000604)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001021)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.png', NULL)[0m
+  [4;35;1mEntry Update (0.000950)[0m   [0mUPDATE entries SET `image` = 'kerb.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.000962)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002435)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002634)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003069)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002848)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002444)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002390)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003746)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002659)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002767)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002424)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002713)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002698)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000550)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000831)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;35;1mEntry Update (0.000661)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.000892)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001501)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.000593)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.001175)[0m   [0mUPDATE entries SET `textfile` = NULL, `image` = 'kerb.jpg' WHERE `id` = 1[0m
+  [4;36;1mEntry Update (0.000758)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000921)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002801)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002059)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003009)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002683)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.014069)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002092)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002718)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002770)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000728)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001173)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000939)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.001186)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002607)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.003403)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003136)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002985)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000525)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001068)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('', '')[0m
+  [4;36;1mSQL (0.001018)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000399)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000719)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', 'pict.png')[0m
+  [4;35;1mSQL (0.000909)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001151)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mEntry Load (0.001241)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 2) [0m
+  [4;36;1mSQL (0.002331)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002376)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002619)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002656)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000348)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000737)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('', '')[0m
+  [4;36;1mSQL (0.000841)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000361)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000483)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', 'pict.png')[0m
+  [4;35;1mSQL (0.001056)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001087)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mEntry Load (0.001047)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 2) [0m
+  [4;36;1mEntry Load (0.001111)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 2) [0m
+  [4;35;1mSQL (0.002328)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002062)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.019010)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002755)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.007744)[0m   [0mALTER TABLE entries ADD `image_exif_date_time` datetime[0m
+  [4;36;1mSQL (0.007808)[0m   [0;1mALTER TABLE entries ADD `image_exif_model` varchar(255)[0m
+  [4;35;1mEntry Columns (0.004172)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.002625)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002382)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003037)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002728)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.007335)[0m   [0;1mALTER TABLE entries ADD `image_filesize` int(11)[0m
+  [4;35;1mEntry Columns (0.004721)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000691)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000719)[0m   [0mINSERT INTO entries (`image_filesize`, `image`, `textfile`) VALUES(87582, 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000689)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000959)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002452)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002431)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002608)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.025325)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.007390)[0m   [0;1mALTER TABLE entries ADD `image_height` int(11)[0m
+  [4;35;1mEntry Columns (0.005467)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000854)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000625)[0m   [0mINSERT INTO entries (`image_height`, `image`, `textfile`) VALUES(480, 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000704)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000911)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002157)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002161)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002711)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002884)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006871)[0m   [0;1mALTER TABLE entries ADD `image_filesize` int(11)[0m
+  [4;35;1mEntry Columns (0.003594)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000391)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000637)[0m   [0mINSERT INTO entries (`image_filesize`, `image`, `textfile`) VALUES(87582, 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000757)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000991)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002808)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002666)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003153)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003024)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008121)[0m   [0;1mALTER TABLE entries ADD `image_mime_type` varchar(255)[0m
+  [4;35;1mEntry Columns (0.003892)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000407)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000675)[0m   [0mINSERT INTO entries (`image_mime_type`, `image`, `textfile`) VALUES('text/html', 'index.html', NULL)[0m
+  [4;36;1mEntry Update (0.000901)[0m   [0;1mUPDATE entries SET `image` = 'index.html' WHERE id = 1[0m
+  [4;35;1mSQL (0.000863)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002217)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002228)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.021671)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002572)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.007206)[0m   [0;1mALTER TABLE entries ADD `image_width` int(11)[0m
+  [4;35;1mEntry Columns (0.004080)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000486)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000759)[0m   [0mINSERT INTO entries (`image_width`, `image`, `textfile`) VALUES(640, 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000663)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000878)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002380)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002455)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002824)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002535)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mEntry Columns (0.004001)[0m   [0;1mSHOW FIELDS FROM entries[0m
+  [4;35;1mSQL (0.000901)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000755)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;35;1mEntry Update (0.000793)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.001441)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.002363)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002358)[0m   [0;1mDROP TABLE movies[0m
+  [4;36;1mSQL (0.000305)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.023473)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002409)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mEntry Columns (0.069309)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.002355)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002258)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002994)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003044)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002419)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002475)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002859)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002904)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002750)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002315)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003142)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002712)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002526)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002275)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002687)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.028100)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002415)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002476)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002833)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002633)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000466)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001225)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.000731)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001081)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001447)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mSQL (0.000503)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Update (0.000836)[0m   [0;1mUPDATE entries SET `textfile` = NULL, `image` = 'kerb.jpg' WHERE `id` = 1[0m
+  [4;35;1mEntry Update (0.000810)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000965)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002263)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002432)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002737)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.019731)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002501)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002701)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002778)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002955)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000505)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000840)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000662)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000893)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002377)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002459)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003468)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003407)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002630)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002246)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002910)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002918)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000482)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000943)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.png', NULL)[0m
+  [4;35;1mEntry Update (0.000694)[0m   [0mUPDATE entries SET `image` = 'kerb.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.001188)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002944)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002123)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002850)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002876)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003068)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.024106)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003174)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003547)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002617)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002262)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003093)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002680)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000688)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000880)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;35;1mEntry Update (0.000673)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.000908)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001578)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.000482)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.000946)[0m   [0mUPDATE entries SET `textfile` = NULL, `image` = 'kerb.jpg' WHERE `id` = 1[0m
+  [4;36;1mEntry Update (0.000763)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.001128)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.006240)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.003463)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003510)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003055)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002413)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002416)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003348)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002960)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000803)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000928)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000928)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000905)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002703)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002371)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.004428)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003008)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000471)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001064)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('', '')[0m
+  [4;36;1mSQL (0.001165)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000446)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000662)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', 'pict.png')[0m
+  [4;35;1mSQL (0.001031)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001567)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mEntry Load (0.001334)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 2) [0m
+  [4;36;1mSQL (0.019042)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002588)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002825)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003080)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000423)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000974)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('', '')[0m
+  [4;36;1mSQL (0.001304)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000471)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000601)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', 'pict.png')[0m
+  [4;35;1mSQL (0.000982)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001087)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mEntry Load (0.001096)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 2) [0m
+  [4;36;1mEntry Load (0.001007)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 2) [0m
+  [4;35;1mSQL (0.002300)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002209)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002591)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002538)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.007395)[0m   [0mALTER TABLE entries ADD `image_exif_date_time` datetime[0m
+  [4;36;1mSQL (0.006973)[0m   [0;1mALTER TABLE entries ADD `image_exif_model` varchar(255)[0m
+  [4;35;1mEntry Columns (0.004276)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.002385)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002532)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003697)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003135)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008306)[0m   [0;1mALTER TABLE entries ADD `image_filesize` int(11)[0m
+  [4;35;1mEntry Columns (0.006860)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000591)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001178)[0m   [0mINSERT INTO entries (`image_filesize`, `image`, `textfile`) VALUES(87582, 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000671)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.001062)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002287)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002312)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002708)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002644)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.007025)[0m   [0;1mALTER TABLE entries ADD `image_height` int(11)[0m
+  [4;35;1mEntry Columns (0.004447)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000495)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000643)[0m   [0mINSERT INTO entries (`image_height`, `image`, `textfile`) VALUES(480, 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000758)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000872)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002205)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002170)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002801)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002636)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.007376)[0m   [0;1mALTER TABLE entries ADD `image_filesize` int(11)[0m
+  [4;35;1mEntry Columns (0.003991)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000578)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000622)[0m   [0mINSERT INTO entries (`image_filesize`, `image`, `textfile`) VALUES(87582, 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000639)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000979)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.004006)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002372)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003397)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003290)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.032391)[0m   [0;1mALTER TABLE entries ADD `image_mime_type` varchar(255)[0m
+  [4;35;1mEntry Columns (0.006405)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000589)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000666)[0m   [0mINSERT INTO entries (`image_mime_type`, `image`, `textfile`) VALUES('text/html', 'index.html', NULL)[0m
+  [4;36;1mEntry Update (0.000769)[0m   [0;1mUPDATE entries SET `image` = 'index.html' WHERE id = 1[0m
+  [4;35;1mSQL (0.000938)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002741)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002435)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.004103)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002996)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.010832)[0m   [0;1mALTER TABLE entries ADD `image_width` int(11)[0m
+  [4;35;1mEntry Columns (0.003692)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000598)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000707)[0m   [0mINSERT INTO entries (`image_width`, `image`, `textfile`) VALUES(640, 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000647)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000943)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002392)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002322)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003026)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002628)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mEntry Columns (0.003946)[0m   [0;1mSHOW FIELDS FROM entries[0m
+  [4;35;1mSQL (0.000755)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001106)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;35;1mEntry Update (0.000937)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.001060)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002905)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002315)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002721)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002725)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002266)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002397)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.015283)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002676)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001636)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001758)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;35;1mEntry Update (0.001330)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.001405)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002358)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002388)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003275)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003170)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002388)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002102)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002987)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002745)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003128)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.003035)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002738)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.028175)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002455)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002540)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003132)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002728)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000651)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001146)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000828)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001073)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002378)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002453)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002879)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002555)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002430)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002702)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002784)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002958)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000758)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000321)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000455)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001387)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000717)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001148)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002778)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002844)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.005694)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003049)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001036)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001198)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000744)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001040)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.002075)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.000673)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000434)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001640)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mSQL (0.000419)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Update (0.000723)[0m   [0;1mUPDATE entries SET `textfile` = NULL, `image` = 'skanthak.png' WHERE `id` = 1[0m
+  [4;35;1mEntry Update (0.000739)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.001128)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.014853)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002372)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002579)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002750)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002460)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002836)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003039)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003145)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000669)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001052)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000697)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000975)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001674)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.002403)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002539)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002518)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002889)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000875)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000960)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000722)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.001042)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001331)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mSQL (0.002402)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002330)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002932)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002771)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002671)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002456)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.030091)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003044)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002410)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002466)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002883)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003004)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002990)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002665)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003097)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002876)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000791)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000905)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000804)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001125)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000435)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Destroy (0.000625)[0m   [0;1m DELETE FROM entries
+ WHERE `id` = 1
+[0m
+  [4;35;1mSQL (0.001265)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.003413)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.003005)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003653)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003405)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003458)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002714)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003683)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003258)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002919)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.028306)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003985)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003514)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mMovie Columns (0.009640)[0m   [0;1mSHOW FIELDS FROM movies[0m
+  [4;35;1mSQL (0.000594)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000719)[0m   [0;1mINSERT INTO movies (`name`, `movie`, `description`) VALUES('aroo', 'skanthak.png', NULL)[0m
+  [4;35;1mMovie Update (0.000839)[0m   [0mUPDATE movies SET `movie` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.001264)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002321)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002635)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002849)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002668)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002715)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002380)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002883)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002905)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000577)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000989)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000683)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000936)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002823)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002440)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002858)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003026)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000653)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000833)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000750)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001027)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002562)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002812)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.019644)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002822)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000667)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001192)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES(NULL, NULL)[0m
+  [4;35;1mSQL (0.000922)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002714)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002436)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.005839)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003214)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001481)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001410)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.001037)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.002484)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000429)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.000808)[0m   [0mUPDATE entries SET `textfile` = NULL, `image` = NULL WHERE `id` = 1[0m
+  [4;36;1mSQL (0.001007)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001790)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mEntry Load (0.001572)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mSQL (0.002556)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002666)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003058)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002986)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002497)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002782)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002886)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003355)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000573)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000955)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000808)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001002)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002293)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002203)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003195)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.030252)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002504)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002674)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.019607)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002887)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003479)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002547)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003179)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.004630)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002622)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002546)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.005206)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008005)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001235)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001176)[0m   [0;1mINSERT INTO movies (`name`, `movie`, `description`) VALUES(NULL, 'kerb.jpg', NULL)[0m
+  [4;35;1mMovie Update (0.001332)[0m   [0mUPDATE movies SET `movie` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001086)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMovie Load (0.001590)[0m   [0mSELECT * FROM movies WHERE (movies.`id` = 1) [0m
+  [4;36;1mSQL (0.000412)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Update (0.000820)[0m   [0mUPDATE movies SET `description` = NULL, `movie` = 'kerb.jpg', `name` = 'arg' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000973)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002310)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002667)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002939)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.030866)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000695)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000897)[0m   [0;1mINSERT INTO movies (`name`, `movie`, `description`) VALUES(NULL, 'kerb.jpg', NULL)[0m
+  [4;35;1mMovie Update (0.000739)[0m   [0mUPDATE movies SET `movie` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000958)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMovie Load (0.002648)[0m   [0mSELECT * FROM movies WHERE (movies.`id` = 1) [0m
+  [4;36;1mSQL (0.000457)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Update (0.000680)[0m   [0mUPDATE movies SET `description` = NULL, `movie` = 'kerb.jpg', `name` = 'arg' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000907)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002374)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002283)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002644)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002505)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002384)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002339)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002655)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002826)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002172)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002263)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002890)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003128)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002733)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002845)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003155)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002980)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000711)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001027)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;35;1mEntry Update (0.000694)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.002100)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002427)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002324)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.026638)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002984)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002802)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002682)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002865)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002835)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002679)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002454)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002869)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002870)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002345)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002444)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002865)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002889)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002396)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002204)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002597)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.020081)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000689)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001063)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('donkey.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000701)[0m   [0mUPDATE entries SET `image` = 'donkey.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001144)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002436)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002479)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.017485)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003260)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002698)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002559)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003175)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002835)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.018263)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002091)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002774)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002819)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001014)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001053)[0m   [0;1mINSERT INTO movies (`name`, `movie`, `description`) VALUES('The Demented Cartoon Movie', 'donkey_the_demented_cartoon_movie_kerb_duck.jpg', NULL)[0m
+  [4;35;1mMovie Update (0.000860)[0m   [0mUPDATE movies SET `movie` = 'donkey_the_demented_cartoon_movie_kerb_duck.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.002322)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002453)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.003121)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003073)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002800)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001817)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.002442)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('donkey_new.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000825)[0m   [0mUPDATE entries SET `image` = 'donkey_1.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001353)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.001253)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000860)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('donkey_new.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.001057)[0m   [0mUPDATE entries SET `image` = 'donkey_2.jpg' WHERE id = 2[0m
+  [4;36;1mSQL (0.001406)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.002193)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.002549)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002270)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003033)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003069)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003171)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002953)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003093)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002639)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002819)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.021760)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003199)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003152)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000681)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000911)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('do_nk_ey.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000824)[0m   [0;1mUPDATE entries SET `image` = 'do_nk_ey.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.001199)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002349)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002251)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002950)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002766)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001044)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000910)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.000950)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.000955)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002226)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002222)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003050)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003191)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002595)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002318)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002581)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002823)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002273)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002357)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.004149)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002791)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000705)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001091)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.001161)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.044207)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.004484)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.001831)[0m   [0mUPDATE entries SET `textfile` = NULL, `image` = 'skanthak.png' WHERE `id` = 1[0m
+  [4;36;1mEntry Update (0.006838)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001001)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000432)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Destroy (0.000629)[0m   [0m DELETE FROM entries
+ WHERE `id` = 1
+[0m
+  [4;36;1mSQL (0.001145)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002724)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.003012)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003141)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.028786)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.012740)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000968)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.006622)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001099)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000979)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Update (0.000764)[0m   [0;1mUPDATE entries SET `textfile` = NULL, `image` = 'skanthak.png' WHERE `id` = 1[0m
+  [4;35;1mEntry Update (0.001114)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.000952)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000340)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Destroy (0.000586)[0m   [0;1m DELETE FROM entries
+ WHERE `id` = 1
+[0m
+  [4;35;1mSQL (0.001088)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002378)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002385)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003219)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002836)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000668)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001114)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000922)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000982)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000636)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.000780)[0m   [0mUPDATE entries SET `textfile` = NULL, `image` = 'skanthak.png' WHERE `id` = 1[0m
+  [4;36;1mEntry Update (0.000748)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001180)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000619)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Destroy (0.131462)[0m   [0m DELETE FROM entries
+ WHERE `id` = 1
+[0m
+  [4;36;1mSQL (0.000905)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002363)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002266)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002629)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003178)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('do_nk_ey.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000000)[0m   [0mUPDATE entries SET `image` = 'do_nk_ey.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000000)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003189)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003004)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000857)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001132)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000886)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000995)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002643)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002406)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002955)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.029482)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001056)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001034)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000741)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.002481)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.002152)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.001445)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.000861)[0m   [0mUPDATE entries SET `textfile` = NULL, `image` = 'skanthak.png' WHERE `id` = 1[0m
+  [4;36;1mEntry Update (0.001119)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001129)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.003734)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002464)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003107)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.022082)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001104)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000506)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000785)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.002043)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.001490)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001048)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002466)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002274)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002972)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002777)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001050)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000366)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000844)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001787)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.000787)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001110)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.003503)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002262)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002591)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.004392)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.015913)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001246)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.007761)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001081)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002468)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002487)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003337)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003102)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002890)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.003891)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003261)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003145)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000564)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001143)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES(NULL, NULL)[0m
+  [4;36;1mSQL (0.001181)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.002385)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.002411)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002428)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.017904)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002818)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000697)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000873)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.001008)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001234)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002934)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.006699)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003116)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003302)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.010914)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.003607)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002897)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003004)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002799)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002665)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003006)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002786)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000982)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000917)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.001008)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.000953)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002351)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002596)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003527)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.031951)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000873)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.002225)[0m   [0mINSERT INTO movies (`name`, `movie`, `description`) VALUES('The Demented Cartoon Movie', 'skanthak.png', NULL)[0m
+  [4;36;1mMovie Update (0.000850)[0m   [0;1mUPDATE movies SET `movie` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001868)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002813)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.005567)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003125)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002662)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003325)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002978)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003187)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002876)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000897)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001074)[0m   [0mINSERT INTO movies (`name`, `movie`, `description`) VALUES('The Demented Cartoon Movie', 'skanthak.png', NULL)[0m
+  [4;36;1mMovie Update (0.001257)[0m   [0;1mUPDATE movies SET `movie` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.000989)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002411)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002368)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003263)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002767)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002856)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002743)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003078)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002869)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000998)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001007)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.001020)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001018)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.020297)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002336)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002798)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003011)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002676)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002424)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.004368)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003437)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.015981)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001329)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.008002)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.000961)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002380)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002456)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002853)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002794)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002324)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002418)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002973)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002673)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.014046)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001230)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.009056)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000945)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000435)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000938)[0m   [0mINSERT INTO movies (`name`, `movie`, `description`) VALUES(NULL, 'skanthak.png', NULL)[0m
+  [4;36;1mMovie Update (0.000947)[0m   [0;1mUPDATE movies SET `movie` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001420)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002435)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002366)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003018)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002643)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001354)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001262)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', 'skanthak.png')[0m
+  [4;36;1mEntry Update (0.008338)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mEntry Update (0.006780)[0m   [0mUPDATE entries SET `textfile` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.001032)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002703)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002378)[0m   [0;1mDROP TABLE movies[0m
+  [4;36;1mSQL (0.000436)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002906)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.038846)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mEntry Columns (0.071306)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.002431)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002372)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002822)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002903)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002502)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002405)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002766)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002867)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002415)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002216)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002736)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002908)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002629)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002301)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002930)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002882)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.010695)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002960)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003210)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003517)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000552)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000816)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.000760)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.000908)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001231)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mSQL (0.000519)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Update (0.000792)[0m   [0;1mUPDATE entries SET `textfile` = NULL, `image` = 'kerb.jpg' WHERE `id` = 1[0m
+  [4;35;1mEntry Update (0.000716)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001015)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002327)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002437)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002800)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002712)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002644)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002363)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002785)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002952)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000567)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000834)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000682)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000914)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002380)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002220)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002912)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002571)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002892)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002805)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003085)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.022479)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000783)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000975)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.png', NULL)[0m
+  [4;35;1mEntry Update (0.000666)[0m   [0mUPDATE entries SET `image` = 'kerb.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.000892)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002155)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002383)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002717)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002511)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002477)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002564)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003249)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002988)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002521)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002305)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002684)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002927)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000555)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000933)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;35;1mEntry Update (0.000756)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.000846)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001540)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.000535)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.000669)[0m   [0mUPDATE entries SET `textfile` = NULL, `image` = 'kerb.jpg' WHERE `id` = 1[0m
+  [4;36;1mEntry Update (0.000658)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.001099)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002372)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002202)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002784)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002522)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002565)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002321)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002620)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.023103)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000953)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000981)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000738)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000926)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002305)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002245)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002852)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002597)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000516)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000799)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('', '')[0m
+  [4;36;1mSQL (0.000913)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000296)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000495)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', 'pict.png')[0m
+  [4;35;1mSQL (0.001021)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001193)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mEntry Load (0.001234)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 2) [0m
+  [4;36;1mSQL (0.002277)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002325)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002842)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003057)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000755)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000816)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('', '')[0m
+  [4;36;1mSQL (0.001025)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000571)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000494)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', 'pict.png')[0m
+  [4;35;1mSQL (0.000983)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001055)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mEntry Load (0.001142)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 2) [0m
+  [4;36;1mEntry Load (0.001061)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 2) [0m
+  [4;35;1mSQL (0.002748)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002417)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003158)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002638)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.007789)[0m   [0mALTER TABLE entries ADD `image_exif_date_time` datetime[0m
+  [4;36;1mSQL (0.023481)[0m   [0;1mALTER TABLE entries ADD `image_exif_model` varchar(255)[0m
+  [4;35;1mEntry Columns (0.004320)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000657)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000646)[0m   [0mINSERT INTO entries (`image_exif_date_time`, `image_exif_model`, `image`, `textfile`) VALUES('2003-08-16 21:56:50', 'Canon PowerShot A70', 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.001555)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000919)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002348)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002214)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003010)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002890)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.007183)[0m   [0;1mALTER TABLE entries ADD `image_filesize` int(11)[0m
+  [4;35;1mEntry Columns (0.004177)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000417)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000672)[0m   [0mINSERT INTO entries (`image_filesize`, `image`, `textfile`) VALUES(87582, 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000791)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000913)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002392)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002384)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.004781)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.004019)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008418)[0m   [0;1mALTER TABLE entries ADD `image_height` int(11)[0m
+  [4;35;1mEntry Columns (0.004345)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000502)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000909)[0m   [0mINSERT INTO entries (`image_height`, `image`, `textfile`) VALUES(480, 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000846)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000889)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002276)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002274)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002772)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002789)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.027850)[0m   [0;1mALTER TABLE entries ADD `image_filesize` int(11)[0m
+  [4;35;1mEntry Columns (0.003716)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000595)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000571)[0m   [0mINSERT INTO entries (`image_filesize`, `image`, `textfile`) VALUES(87582, 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000734)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000883)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002370)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002317)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003457)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003139)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.007397)[0m   [0;1mALTER TABLE entries ADD `image_mime_type` varchar(255)[0m
+  [4;35;1mEntry Columns (0.003922)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000387)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000548)[0m   [0mINSERT INTO entries (`image_mime_type`, `image`, `textfile`) VALUES('text/html', 'index.html', NULL)[0m
+  [4;36;1mEntry Update (0.000716)[0m   [0;1mUPDATE entries SET `image` = 'index.html' WHERE id = 1[0m
+  [4;35;1mSQL (0.000928)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002346)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002280)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003175)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002533)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.008004)[0m   [0;1mALTER TABLE entries ADD `image_width` int(11)[0m
+  [4;35;1mEntry Columns (0.004008)[0m   [0mSHOW FIELDS FROM entries[0m
+  [4;36;1mSQL (0.000479)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000626)[0m   [0mINSERT INTO entries (`image_width`, `image`, `textfile`) VALUES(640, 'kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000684)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000889)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002325)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002476)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.021273)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002599)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mEntry Columns (0.003951)[0m   [0;1mSHOW FIELDS FROM entries[0m
+  [4;35;1mSQL (0.000703)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000797)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;35;1mEntry Update (0.000798)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.001250)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002548)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002105)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002611)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002970)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002429)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002114)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002896)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002588)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001507)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001513)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;35;1mEntry Update (0.000848)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.001188)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002357)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002600)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002661)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002940)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002409)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002676)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.024286)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002879)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003449)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.003321)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002858)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003237)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003184)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002727)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003080)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003105)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000938)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001935)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000926)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001196)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002349)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002165)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002871)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002889)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002344)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002578)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002903)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.040365)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000786)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000637)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000546)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000879)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000723)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001033)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002352)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002132)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002645)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002481)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000839)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001043)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000733)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000906)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001921)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.000698)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000358)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001607)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mSQL (0.000498)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Update (0.000767)[0m   [0;1mUPDATE entries SET `textfile` = NULL, `image` = 'skanthak.png' WHERE `id` = 1[0m
+  [4;35;1mEntry Update (0.000633)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.000975)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.003342)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.003423)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003785)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003343)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003384)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.003016)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.004538)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003598)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000896)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001123)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000860)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000917)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001444)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.002636)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002139)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002911)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002522)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000878)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000996)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000794)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.000979)[0m   [0mCOMMIT[0m
+  [4;36;1mEntry Load (0.001433)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mSQL (0.002362)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002292)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002556)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.023283)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002864)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002540)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002868)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002757)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002284)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002417)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002646)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002753)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002711)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002511)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003093)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003153)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000735)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000945)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.001138)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001358)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000524)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Destroy (0.000838)[0m   [0;1m DELETE FROM entries
+ WHERE `id` = 1
+[0m
+  [4;35;1mSQL (0.001327)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002491)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002447)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002662)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003011)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002624)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002252)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002528)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.018224)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002329)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002447)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003089)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002898)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mMovie Columns (0.004389)[0m   [0;1mSHOW FIELDS FROM movies[0m
+  [4;35;1mSQL (0.000826)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000717)[0m   [0;1mINSERT INTO movies (`name`, `movie`, `description`) VALUES('aroo', 'skanthak.png', NULL)[0m
+  [4;35;1mMovie Update (0.000793)[0m   [0mUPDATE movies SET `movie` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.001017)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002408)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002281)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003069)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002871)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002542)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002355)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003287)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003706)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000611)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000921)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000674)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001160)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002938)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002885)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003015)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.016041)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000784)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001202)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000839)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000919)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002483)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002223)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002943)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002491)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000427)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000853)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES(NULL, NULL)[0m
+  [4;35;1mSQL (0.001790)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002480)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002398)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002669)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002696)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000967)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000837)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000694)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.001181)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000564)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.000816)[0m   [0mUPDATE entries SET `textfile` = NULL, `image` = NULL WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000967)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001877)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mEntry Load (0.001749)[0m   [0;1mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;35;1mSQL (0.002437)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002320)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003487)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003000)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002446)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002162)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002769)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003058)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000666)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001189)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000832)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001429)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002857)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.003094)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003398)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.026661)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002818)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002794)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003196)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002739)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002637)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002298)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002720)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002623)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002389)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002258)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002696)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002695)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000662)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001292)[0m   [0;1mINSERT INTO movies (`name`, `movie`, `description`) VALUES(NULL, 'kerb.jpg', NULL)[0m
+  [4;35;1mMovie Update (0.000838)[0m   [0mUPDATE movies SET `movie` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001114)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMovie Load (0.002037)[0m   [0mSELECT * FROM movies WHERE (movies.`id` = 1) [0m
+  [4;36;1mSQL (0.000331)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Update (0.000769)[0m   [0mUPDATE movies SET `description` = NULL, `movie` = 'kerb.jpg', `name` = 'arg' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000983)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.003126)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002796)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002616)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003093)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000821)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000964)[0m   [0;1mINSERT INTO movies (`name`, `movie`, `description`) VALUES(NULL, 'kerb.jpg', NULL)[0m
+  [4;35;1mMovie Update (0.000916)[0m   [0mUPDATE movies SET `movie` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001115)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMovie Load (0.002477)[0m   [0mSELECT * FROM movies WHERE (movies.`id` = 1) [0m
+  [4;36;1mSQL (0.000483)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Update (0.000826)[0m   [0mUPDATE movies SET `description` = NULL, `movie` = 'kerb.jpg', `name` = 'arg' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.004281)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.003744)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002801)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.020123)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003545)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002624)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002895)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003077)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003223)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003353)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002624)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003373)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003430)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003031)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.003384)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003616)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003178)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000822)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001370)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;35;1mEntry Update (0.000728)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.000987)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.003493)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002352)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003153)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003121)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002707)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002491)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.017347)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003252)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002699)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002504)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002599)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003041)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002269)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002334)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002770)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002666)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002664)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002377)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002745)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.022370)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000756)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001181)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('donkey.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000720)[0m   [0mUPDATE entries SET `image` = 'donkey.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001594)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002699)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.003140)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003433)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003116)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002992)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002976)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003736)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003207)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003532)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.003098)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.005059)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.006798)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000903)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000868)[0m   [0;1mINSERT INTO movies (`name`, `movie`, `description`) VALUES('The Demented Cartoon Movie', 'donkey_the_demented_cartoon_movie_kerb_duck.jpg', NULL)[0m
+  [4;35;1mMovie Update (0.000734)[0m   [0mUPDATE movies SET `movie` = 'donkey_the_demented_cartoon_movie_kerb_duck.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.005419)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002738)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002542)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002844)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.020768)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001716)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001231)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('donkey_new.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000780)[0m   [0mUPDATE entries SET `image` = 'donkey_1.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001893)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.001156)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001009)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('donkey_new.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.002545)[0m   [0mUPDATE entries SET `image` = 'donkey_2.jpg' WHERE id = 2[0m
+  [4;36;1mSQL (0.001185)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001936)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.002383)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002474)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003060)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002967)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002809)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002485)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002967)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002947)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002721)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002624)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003172)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003097)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000673)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000898)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('do_nk_ey.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000815)[0m   [0;1mUPDATE entries SET `image` = 'do_nk_ey.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.008576)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.244491)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002336)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002983)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.019257)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000730)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001260)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.000993)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.000928)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002323)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002298)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003214)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002898)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002373)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002479)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002634)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002814)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002440)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002376)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002977)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002914)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000731)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000950)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000954)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.001089)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.001339)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.001392)[0m   [0mUPDATE entries SET `textfile` = NULL, `image` = 'skanthak.png' WHERE `id` = 1[0m
+  [4;36;1mEntry Update (0.001139)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001392)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000355)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Destroy (0.000761)[0m   [0m DELETE FROM entries
+ WHERE `id` = 1
+[0m
+  [4;36;1mSQL (0.001072)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002444)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002383)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.002928)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.017184)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000862)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000942)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000849)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001304)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.001244)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Update (0.001129)[0m   [0;1mUPDATE entries SET `textfile` = NULL, `image` = 'skanthak.png' WHERE `id` = 1[0m
+  [4;35;1mEntry Update (0.000720)[0m   [0mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.003478)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000628)[0m   [0mBEGIN[0m
+  [4;36;1mEntry Destroy (0.000807)[0m   [0;1m DELETE FROM entries
+ WHERE `id` = 1
+[0m
+  [4;35;1mSQL (0.001956)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002794)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002716)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.028875)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003801)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000778)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001053)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.000976)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.001029)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000655)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.000718)[0m   [0mUPDATE entries SET `textfile` = NULL, `image` = 'skanthak.png' WHERE `id` = 1[0m
+  [4;36;1mEntry Update (0.000734)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001456)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000724)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Destroy (0.000862)[0m   [0m DELETE FROM entries
+ WHERE `id` = 1
+[0m
+  [4;36;1mSQL (0.001527)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002862)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002767)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003218)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003049)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('do_nk_ey.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000000)[0m   [0mUPDATE entries SET `image` = 'do_nk_ey.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000000)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003216)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003006)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001005)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001065)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.000774)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.001381)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002779)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.003161)[0m   [0;1mDROP TABLE movies[0m
+  [4;35;1mSQL (0.003567)[0m   [0mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003796)[0m   [0;1mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.015524)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001171)[0m   [0;1mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;35;1mEntry Update (0.001007)[0m   [0mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;36;1mSQL (0.000953)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001813)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.001012)[0m   [0;1mBEGIN[0m
+  [4;35;1mEntry Update (0.000811)[0m   [0mUPDATE entries SET `textfile` = NULL, `image` = 'skanthak.png' WHERE `id` = 1[0m
+  [4;36;1mEntry Update (0.000726)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001205)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.003309)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.003295)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.004020)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003418)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.012502)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000462)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.005562)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001404)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.006752)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.000920)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002465)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002509)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003317)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002991)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000898)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000607)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000839)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001205)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.001410)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.000979)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.003327)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.006778)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003488)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003485)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000754)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001236)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.002403)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001034)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002535)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.003977)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003186)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003006)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003656)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002664)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003206)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002960)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000454)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001030)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES(NULL, NULL)[0m
+  [4;36;1mSQL (0.001028)[0m   [0;1mCOMMIT[0m
+  [4;35;1mEntry Load (0.001953)[0m   [0mSELECT * FROM entries WHERE (entries.`id` = 1) [0m
+  [4;36;1mSQL (0.005504)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.003981)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002855)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002736)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000783)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000969)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.005220)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.000940)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002340)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002695)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003061)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002850)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003282)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002645)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003073)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003049)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003083)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002724)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002898)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003167)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000731)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000940)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.000850)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.000949)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002327)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002576)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003118)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002875)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005763)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001462)[0m   [0mINSERT INTO movies (`name`, `movie`, `description`) VALUES('The Demented Cartoon Movie', 'skanthak.png', NULL)[0m
+  [4;36;1mMovie Update (0.000956)[0m   [0;1mUPDATE movies SET `movie` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001091)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002753)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002876)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002770)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002952)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.003779)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.003870)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.027498)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002726)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000806)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000924)[0m   [0mINSERT INTO movies (`name`, `movie`, `description`) VALUES('The Demented Cartoon Movie', 'skanthak.png', NULL)[0m
+  [4;36;1mMovie Update (0.001220)[0m   [0;1mUPDATE movies SET `movie` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001093)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002611)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002252)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002853)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003230)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002961)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002526)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003145)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002833)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000757)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001030)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.001084)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001165)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.003782)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002615)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003247)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003167)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002545)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002220)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003398)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003400)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000796)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001070)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('skanthak.png', NULL)[0m
+  [4;36;1mEntry Update (0.000779)[0m   [0;1mUPDATE entries SET `image` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001011)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002296)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.003469)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.018736)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002963)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.002686)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.002383)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.003102)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003216)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.019276)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.007492)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', NULL)[0m
+  [4;36;1mEntry Update (0.007356)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mSQL (0.002272)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000474)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000924)[0m   [0mINSERT INTO movies (`name`, `movie`, `description`) VALUES(NULL, 'skanthak.png', NULL)[0m
+  [4;36;1mMovie Update (0.001035)[0m   [0;1mUPDATE movies SET `movie` = 'skanthak.png' WHERE id = 1[0m
+  [4;35;1mSQL (0.001144)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002536)[0m   [0;1mDROP TABLE entries[0m
+  [4;35;1mSQL (0.004348)[0m   [0mDROP TABLE movies[0m
+  [4;36;1mSQL (0.002782)[0m   [0;1mCREATE TABLE entries (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` varchar(255) DEFAULT NULL, `textfile` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.002700)[0m   [0mCREATE TABLE movies (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `movie` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `description` text DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000932)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.002456)[0m   [0mINSERT INTO entries (`image`, `textfile`) VALUES('kerb.jpg', 'skanthak.png')[0m
+  [4;36;1mEntry Update (0.008216)[0m   [0;1mUPDATE entries SET `image` = 'kerb.jpg' WHERE id = 1[0m
+  [4;35;1mEntry Update (0.006603)[0m   [0mUPDATE entries SET `textfile` = 'skanthak.png' WHERE id = 1[0m
+  [4;36;1mSQL (0.001128)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.002608)[0m   [0mDROP TABLE entries[0m
+  [4;36;1mSQL (0.002414)[0m   [0;1mDROP TABLE movies[0m

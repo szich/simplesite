@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Estate Planning Council of Portland</title>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="expires" content="-1" />
+  <meta http-equiv= "pragma" content="no-cache" />
+  <meta name="robots" content="all" />
+  
+	<style type="text/css" media="all">@import url("/stylesheets/screen.css");</style>
+
+	<%= stylesheet_link_tag 'data_grid' %>
+	<%= javascript_include_tag :defaults %>
+	
+	<%= stylesheet_auto_link_tags %>
+	<%= javascript_auto_include_tags %>
+	
+</head>
+<body style="background: #f1f1ee">
+	<% if flash[:alert_bad] %><p id="alertBad"><%=h flash[:alert_bad]%></p><% end %>
+	<% if flash[:alert_good] %><p id="alertGood"><%=h flash[:alert_good]%></p><% end %>
+	<%= yield %>    
+</body>
+</html>

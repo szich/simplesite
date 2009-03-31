@@ -1,0 +1,19 @@
+<p>
+  <b>Name:</b>
+  <%=h @resource.name %>
+</p>
+
+<p>
+  <b>Resource Link:</b> <%= link_to(@resource.name, @resource.uri) %>
+<p>
+  <b>Description:</b>
+  <%=h @resource.description %>
+</p>
+
+<p>
+  <b>View count:</b>
+  <%=h @resource.view_count %>
+</p>
+
+<%= link_to('Edit | ', edit_resource_path(@resource)) if can_manage_content? %>
+<%= link_to 'Back', resources_path %>

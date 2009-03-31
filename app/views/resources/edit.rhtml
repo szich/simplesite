@@ -1,0 +1,11 @@
+<h1>Editing resource</h1>
+
+<%= error_messages_for :resource %>
+
+<% form_for(:resource, :url => resource_path(@resource), :html => { :method => :put, :multipart => true }) do |f| %>
+	<%= render :partial => 'form', :locals => { :f => f } %>
+  <%= submit_tag "Update" %>
+<% end %>
+
+<%= link_to 'Show', resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>

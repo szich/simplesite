@@ -1,0 +1,21 @@
+<h1>Editing the <%= @page.name %> page</h1>
+
+<%= error_messages_for :page %>
+
+<% form_for(:page, :url => page_path(@page), :html => { :method => :put }) do |f| %>
+  <!-- <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p> -->
+
+  <p>
+    <b>Body</b><br />
+    <%= f.text_area :body, :cols => 70, :rows => 40 %>
+  </p>
+
+  <p>
+    <%= submit_tag "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', page_path(@page) %> | <%= link_to 'Back', url_to_previous_page %>

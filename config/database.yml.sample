@@ -1,0 +1,17 @@
+login: &login
+  adapter: mysql
+  host: localhost
+  username: epcop_user
+  password: 
+
+development:
+  database: epcop_development
+  <<: *login 
+
+test:
+  database: epcop_test
+  <<: *login 
+
+production:
+  database: epcop_production
+  <<: *login

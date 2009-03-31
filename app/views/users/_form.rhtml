@@ -1,0 +1,87 @@
+	<table>
+		<tr><td colspan="2">Discipline <%= f.select(:discipline_id, Discipline.find(:all).collect {|d| [d.name, d.id] }) %></td></tr>
+	  <tr>
+	    <td><label for="user_first_name">First name</label></td>
+	    <td><label for="user_last_name">Last name</label></td>
+	  </tr>
+	  <tr>
+	    <td><%= f.text_field :first_name %></td>
+	    <td><%= f.text_field :last_name %></td>
+	  </tr>
+	  <tr>
+	    <td colspan="2">Business Name</td>
+	  </tr>  
+	  <tr>
+	    <td colspan="2"><%= f.text_field :business_name %></td>
+	  </tr>	
+	  <tr>
+	    <td colspan="2">Address</td>
+	  </tr>  
+	  <tr>
+	    <td colspan="2"><%= f.text_field :business_address %></td>
+	  </tr>
+	  <tr>
+	    <td colspan="2">Address 2</td>
+	  </tr>  
+	  <tr>
+	    <td colspan="2"><%= f.text_field :business_address2 %></td>
+	  </tr>	
+	  <tr>
+	    <td><label for="user_city">City</label></td>
+	    <td><label for="user_state">State</label> <label for="user_zip">Zip</label></td>
+	  </tr>
+	  <tr>
+	    <td><%= f.text_field :business_city %></td>
+	    <td><%= f.text_field :business_state, :size => '3' %> <%= f.text_field :business_zip, :size => '6' %></td>
+	</table>
+
+
+	<table id="data_list" style="margin-top: 20px;">
+	  <caption>Contact Information</caption>
+	  <thead>
+	  <tr>
+	    <th style="width: 150px;">&nbsp;</th><th>Primary</th><th>Secondary</th>
+	  </tr>
+	  </thead>
+	  <tr>
+	    <td class="label"><label for="user_phone_primary">Phone</label></td>
+	    <td><%= f.text_field :phone %></td>
+	    <td><%= f.text_field :phone_secondary %></td>
+	  </tr>
+	  <tr>
+	    <td class="label"><label for="user_fax">Fax</label></td>
+	    <td><%= f.text_field :business_fax %></td>
+	    <td>NA</td>
+	  </tr>
+
+	  <tr>
+	    <td class="label"><label for="user_website">Website</label></td>
+	    <td><%= f.text_field :website %></td>
+	    <td>NA</td>
+	  </tr>
+	  <tr>
+	    <td class="label"><label for="user_email_primary">Email</label></td>
+	    <td><%= f.text_field :email %></td>
+	    <td><%= f.text_field :email_secondary %></td>
+	  </tr>
+	  <tr>
+	    <td class="label"><label for="user_im_primary">Instant Message</label></td>
+	    <td><%= f.text_field :im %></td>
+	    <td><%= f.text_field :im_secondary %></td>
+	  </tr>
+	</table>	
+
+	<h3 style="margin-bottom: 2px;">Personal Preferences</h3>
+	<div id="personal_preferences">
+		<%= f.check_box :show_personal_info %> Allow the general public to view my profile.<br />
+		<!-- <%= f.check_box :send_emails %> Email me official announcements.<br /> -->
+	</div>
+
+<% if can_manage_users? %>
+	<h3 style="margin-bottom: 2px;">Admin Preferences</h3>
+	<div id="admin_preferences">
+		<%= f.check_box :can_manage_content %> Allow this member to manage site content.<br />
+		<%= f.check_box :can_manage_users %> Allow this member to manage all members.<br />
+		<%= f.check_box :is_active %> Uncheck to deactivate this member.<br />
+	</div>
+<% end %>

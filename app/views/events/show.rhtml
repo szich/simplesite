@@ -1,0 +1,109 @@
+<h1 style="margin-bottom: 2px;"><%= @event.name %></h1>
+
+<div id="pull_quote" style="float: right;">
+<% if current_user_attending?(@event) %>
+	You are signed up to attend this event.<br /> <%= link_to 'Click here if you can no longer attend', regrets_event_path, :method => :post %>
+<% else %>
+	You have not yet signed up to attend this event.<br /> <%= link_to 'Click here to sign up now', signup_event_path, :method => :post %>
+<% end %>
+</div>
+
+<strong><%=h @event.held_on.to_formatted_s(:standard) if @event.held_on %></strong><br />
+<strong><%= @event.location %></strong><br />
+<%= @event.address %><br />
+<%= "#{@event.city}, " if @event.city != '' %> <%= @event.state %> <%= @event.zip %><br />
+<%= link_to 'Download iCal', generate_ical_event_path(@event) %>
+
+<p style="padding-top: 10px;">
+	<strong>Description</strong><br />
+	<%= @event.description %>
+</p>
+
+<table border="0" width="100%" style="margin-top: 20px;">
+	<tr>
+		<td>
+
+			<table id="data_list" width="95%">
+			  <caption>Speakers</caption>
+			  <thead>
+			  <tr><th style="width: 150px;">Name</th></tr>
+			  </thead>
+
+				<tbody>
+					<tr>
+			    	<td>
+			    		<%= (@event.speakers == nil) || (@event.speakers == '') ? "None" : @event.speakers %>
+			    	</td>
+			  	</tr>
+				</tbody>
+
+			</table>			
+			
+		</td>
+		<td>
+			
+			<table id="data_list" width="95%">
+			  <caption>Materials</caption>
+			  <thead>
+			  <tr><th style="width: 150px;">Name <%= link_to("add new", new_resource_path(:event_id => @event.id)) if can_manage_content? %></th></tr>
+			  </thead>
+
+			  <tr>
+			    <td>
+						<%= "None" if @event.resources.length == 0 %>
+						<% @event.resources.each do |r| -%>
+							<%= render :partial => 'resources/resource_list', :locals => { :r => r } %>
+						<% end -%>
+					</td>
+			  </tr>
+
+			</table>
+			
+		</td>
+	</tr>
+</table>
+
+
+<table border="0" width="100%" style="margin-top: 20px;">
+	<tr>
+		<td>
+
+			<table id="data_list" width="95%">
+			  <caption>Attending</caption>
+			  <thead>
+			  <tr><th style="width: 150px;">Name</th></tr>
+			  </thead>
+				
+				<tbody>
+			  <tr>
+			    <td>
+			    	<%= render :partial => 'user_list', :locals => {:user_list => @event.users} %>
+			    </td>
+			  </tr>
+			</tbody>
+
+			</table>			
+			
+		</td>
+		<td>
+			
+			<table id="data_list" width="95%">
+			  <caption>Not Attending</caption>
+			  <thead>
+			  <tr><th style="width: 150px;">Name</th></tr>
+			  </thead>
+
+			  <tr>
+			    <td>
+						<%= render :partial => 'user_list', :locals => {:user_list => @event.users_not_attending} %>
+					</td>
+			  </tr>
+
+			</table>
+			
+		</td>
+	</tr>
+</table>
+
+<%= link_to('Edit | ', edit_event_path(@event)) if can_manage_content? %>
+<%= link_to 'Back', events_path %>

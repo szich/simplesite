@@ -1,0 +1,5 @@
+<%= "None" if user_list.length == 0 %>
+
+<% user_list.each do |u| -%>
+	<%= link_to u.full_name, user_path(u) %><br />
+<% end -%>

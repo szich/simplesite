@@ -1,0 +1,15 @@
+<%= data_table( :columns =>
+ 	[
+	  { :title => "First", :db_column => "first_name", :format => :show },
+		{ :title => "Last", :db_column => "last_name" },
+		{ :title => "Business", :db_column => "business_name" },
+		{ :title => "Discipline", :db_column => "discipline.name" },
+	  { :db_column => "phone" },
+		{ :db_column => "email", :format => :mail }
+	],
+	:caption => "Members",
+	:filter => true,
+	:display_edit => can_manage_users?,
+	:display_delete => can_manage_users?,
+	:display_add => can_manage_users?
+	) %>

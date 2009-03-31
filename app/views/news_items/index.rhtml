@@ -1,0 +1,10 @@
+<h1>News & Announcements</h1>
+<div style="float: right"><%= link_to('Add New Story', new_news_item_path) if can_manage_content? %></div>
+<div id="text_list">
+<% for item in @news_items -%>
+	<h3><%= link_to item.name, news_item_path(item) %></h3>
+	<p><%= truncate(item.body, 500) %>
+	 <span class="soft_fade"><%= time_ago_in_words(item.updated_at) %></span><br />
+	<%= link_to('Edit', edit_news_item_path(item)) if can_manage_content? %></p>
+<% end -%>
+</div>

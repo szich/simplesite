@@ -1,0 +1,17 @@
+	<table border="0">
+		<tr><td><b>Name</b></td><td colspan="2"><%= f.text_field :name %></td></tr>
+		<tr><td><b>Event</b></td><td colspan="2"><%= f.select("event_id", Event.find(:all).collect {|e| [ e.name, e.id ] }, { :include_blank => true }) %> </td></tr>
+		<tr>
+			<td rowspan="2"><b>Resource</b></td>
+			<td>
+				<select onchange="Element.toggle('resource_local_uri'); Element.toggle('resource_remote_uri')"> 
+					<%= options_for_select({'Upload a file' => '1', 'Enter a Link' => '2'}, (@resource.local_uri ? '1' : '2')) %>
+				</select>
+			</td>
+			<td><%= upload_column_field :resource, :local_uri, :style => "display: #{@resource.local_uri ? 'block' : 'none'};" %> <%= f.text_field :remote_uri, :style => "display: #{@resource.local_uri ? 'none' : 'block'};" %> </td>
+		</tr>
+		<tr><td colspan="2"><%= "(the current file is #{@resource.local_uri})" if @resource.local_uri %></td></tr>
+		<tr><td colspan="3"><b>Description</b></td></tr>
+		<tr><td colspan="3"><%= f.text_area :description, :cols => 60, :rows => 12 %></td></tr>
+	</table>
+	<%#= f.select("user_id", User.find(:all).collect {|u| [ u.full_name, u.id ] }, { :include_blank => false }) %>

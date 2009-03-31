@@ -1,0 +1,5 @@
+<%= "None" if event_list.length == 0 %>
+
+<% event_list.each do |e| -%>
+	<%= link_to e.name, event_path(e) %><br />
+<% end -%>

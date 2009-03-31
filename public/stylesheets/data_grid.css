@@ -1,0 +1,124 @@
+body {
+	background-color: #fff;
+	color: #333;
+}
+
+body, p, ol, ul, td {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.data_grid td a, .data_grid #filter_link {
+	color: #333B99;
+	text-decoration: none;
+}
+
+.data_grid td a:hover, .data_grid #filter_link:hover {
+	color: #333B99;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+.data_grid th a {
+	color: #ececec;
+	text-decoration: none;
+}
+
+.data_grid th a:hover {
+	color: #ececec;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+.data_grid .sort_asc {
+	background: #3a5484 url(/images/sort_asc.png) no-repeat right;
+	padding-right: 20px;
+}
+
+.data_grid .sort_desc {
+	background: #3a5484 url(/images/sort_desc.png) no-repeat right;
+	padding-right: 20px;
+}
+
+.data_grid {
+	/*width: 900px;*/
+	padding: 0;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+.data_grid caption {
+	text-align: left;
+	padding: 0 0 5px;
+	font: bold 14px “Trebuchet MS”, Verdana, Arial, Helvetica, sans-serif;
+	float: none;
+	clear: none;
+	margin-bottom: -2em;
+}
+
+.data_grid #filter_form_submit_btns {
+	float: right;
+}
+
+.data_grid th {
+	font: bold 11px “Trebuchet MS”, Verdana, Arial, Helvetica, sans-serif;
+	color: #ececec;
+	border: 1px solid #9aa0a1;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #3a5484;
+}
+
+.data_grid thead tr:first-child th, .data_grid thead tr:first-child th a {
+	border: none;
+	background: none;
+	text-align: right;
+	color: black;
+}
+
+.data_grid tbody td {
+	border-right: 1px solid #C1DAD7;
+	border: 1px solid #c8cece;
+	background: #fff;
+	padding: 6px 6px 6px 12px;
+	color: #4f6b72;
+}
+
+.data_grid tbody tr.alt td {
+	background: #F5FAFA;
+	color: #797268;
+}
+
+.data_grid tbody tr:hover td {
+	background: #e7eded;
+}
+
+.data_grid tbody .footer_row:hover td {
+	background: none;
+}
+
+.data_grid .pager {
+	border: none;
+	text-align: right;
+	padding: 2px 0 0;	
+}
+
+.data_grid .display_form {
+	border:  none;
+	text-align: left;
+	padding: 2px 0 0;
+}
+
+.data_grid .alternate_views {
+	border:  none;
+	padding: 2px 0 0;
+}
+
+.data_grid #no_results {
+	text-align: center;
+	font-size: 2em;
+	padding: 20px;
+}

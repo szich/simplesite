@@ -1,0 +1,39 @@
+DataGrid
+========
+
+Displays a grid of data.
+
+Usage
+=====
+0) Requirements:
+	a) Rails 1.22 (it may work with other versions, but we haven't tested them.)
+	b) The default javascript files (in order for the show/hide filter to work.) 
+
+1) Extract the plugin under /vendor/plugins
+
+2) Restart your rails application.  This:
+	a) Loads the plugin.
+	b) Copies over the the data_grid css and image files over to your app.
+	c) Adds the CSV fix to your environment.rb (see http://www.pdatasolutions.com/blog/archive/2007/02/mime_type_csv_bug_in_rails_122.html )
+	
+3) Add the data_grid_scaffold to your controller.  This:
+	a) Loads all of the data used by the view(s)
+	i.e.
+	data_grid_scaffold :task, :include => [:user]
+	
+4) Add the data_table call to your view. i.e.
+	
+	<%= data_table( :columns =>
+	 	[
+		  { :db_column => "id",	:format => :show, :filter => false },
+		  { :title => "Task Name", :db_column => "name", :format => :show },
+			{ :title => "User Name", :db_column => "user.first_name" },
+		  { :db_column => "description" }
+		],
+		:filter => true,
+		:display_edit => false,
+		:display_delete => false,
+		:display_add => false
+		) %>
+		
+5) Load the page in your browser :)

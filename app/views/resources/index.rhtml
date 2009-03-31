@@ -1,0 +1,14 @@
+<h1>Resources</h1>
+
+<%= data_table( :columns =>
+ 	[
+		{ :db_column => "name", :format => :custom, :call_back => 'format_name_col' },	
+		{ :title => "Date", :db_column => "updated_at", :format => :date },
+		{ :title => "Event", :db_column => "event_id", :format => :custom, :call_back => 'format_event_col' },
+	  { :title => "Properties", :db_column => "name", :format => :show, :link_name => "Details" }
+	],
+	:caption => "Resources",
+	:display_edit => can_manage_content?,
+	:display_delete => can_manage_content?,
+	:display_add => can_manage_content?
+	) %>

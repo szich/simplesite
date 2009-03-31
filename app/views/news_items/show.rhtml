@@ -1,0 +1,10 @@
+<h1><%= @news_item.name %></h1>
+
+<p>
+  <%= @news_item.body %>
+</p>
+
+<p>Written by <%= link_to(@news_item.user.full_name, user_path(@news_item.user)) if @news_item.user %> <%=h time_ago_in_words(@news_item.updated_at) %> ago.</p>
+
+<%= link_to('Edit | ', edit_news_item_path(@news_item)) if can_manage_content? %>
+<%= link_to 'Back', news_items_path %>

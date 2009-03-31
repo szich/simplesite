@@ -1,0 +1,11 @@
+<h1>Editing Member</h1>
+
+<%= error_messages_for :user %>
+
+<% form_for(:user, :url => user_path(@user), :html => { :method => :put }) do |f| %>
+	<%= render :partial => 'form', :locals => { :f => f } %>	
+  <p style="margin-top: 10px;"><%= submit_tag "Update" %></p>
+<% end %>
+
+<%= link_to 'Show', user_path(@user) %> |
+<%= link_to 'Back', user_path %>

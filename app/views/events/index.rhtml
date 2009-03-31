@@ -1,0 +1,15 @@
+<h1>Events</h1>
+
+
+<%= data_table( :columns =>
+ 	[
+	  { :db_column => "name", :format => :show },
+		{ :title => "Date", :db_column => "held_on", :format => :date },
+		{ :title => "Address", :db_column => "full_address", :sort_column => "address", :filter => false },	
+	  { :db_column => "location" }
+	],
+	:caption => "Events",
+	:display_edit => can_manage_content?,
+	:display_delete => can_manage_content?,
+	:display_add => can_manage_content?
+	) %>

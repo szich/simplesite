@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+one:
+  id: 1
+  name: MyString
+  held_on: 2007-06-06 19:41:55
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  location: MyString
+  description: MyText
+  type_id: 
+  created_at: 2007-06-06 19:41:55
+  updated_at: 2007-06-06 19:41:55
+two:
+  id: 2
+  name: MyString
+  held_on: 2007-06-06 19:41:55
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  location: MyString
+  description: MyText
+  type_id: 
+  created_at: 2007-06-06 19:41:55
+  updated_at: 2007-06-06 19:41:55

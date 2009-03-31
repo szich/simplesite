@@ -1,0 +1,26 @@
+<h1>Welcome</h1>
+
+<%= display_snippet('home') %>
+
+<% if logged_in? %>
+	<h2>Upcoming Events</h2>
+
+	<div id="text_list"><% for event in @events -%>
+	<h3><%= link_to event.name, event_path(event) %></h3>
+	<p>
+		<strong><%= event.held_on.to_s(:standard) %> at <%= event.full_address %></strong><br />
+		<%= truncate(event.description, 500) %><br />
+		<span class="soft_fade">You have <%= current_user_attending?(event) ? '' : 'not'%> registered to attend.</span>
+	</p>
+	<% end -%></div>
+
+
+	<h2>News & Announcements</h2>
+	<div id="text_list">
+	<% for item in @news_items -%>
+		<h3><%= link_to item.name, news_item_path(item) %></h3>
+		<p><%= truncate(item.body, 500) %>
+		 <span class="soft_fade"><%= time_ago_in_words(item.updated_at) %></span></p>
+	<% end -%>
+	</div>
+<% end %>

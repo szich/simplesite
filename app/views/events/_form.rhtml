@@ -1,0 +1,47 @@
+<% require_bundle :dynarch_calendar, :icon => '/images/calendar.gif' -%>
+<table border="0">
+	<tr><td><b>Name</b></td><td colspan="5"><%= f.text_field :name %></td></tr>
+	<tr><td><b>Address</b></td><td colspan="5"><%= f.text_field :address %></td></tr>
+	<tr><td><b>City</b></td><td><%= f.text_field :city %></td> <td>State</td> <td><%= f.text_field :state, :size => 2 %></td> <td>Zip</td> <td><%= f.text_field :zip, :size => 7 %></td> </tr>
+	<tr><td><b>Date/Time</b></td><td colspan="5"><%= calendar_date_select :event, :held_on, :embedded => false, :time => true %> (Click the calendar to set date)</td></tr>
+	<tr><td><b>Location</b></td><td colspan="5"><%= f.text_field :location %> (i.e. Room 105 or 5th floor)</td></tr>
+	<!-- <tr><td><b>Type</b></td><td colspan="5"><%#= f.text_field :type %></td></tr> -->
+	<tr><td colspan="7"><b>Spaekers</b></td></tr>
+	<tr><td colspan="7"><%= f.text_area :speakers, :cols=> 60 , :rows => 12 %></td></tr>
+	<tr><td colspan="7"><b>Description</b></td></tr>
+	<tr><td colspan="7"><%= f.text_area :description, :cols => 60, :rows => 12 %></td></tr>
+</table>
+
+<% if can_manage_users? %>
+
+<table id="data_list" style="margin-top: 15px;">
+  <caption>Event Attendance</caption>
+  <thead>
+  <tr>
+    <th align="center">Attending</th>
+    <th>&nbsp;</td>
+    <th align="center">Not Attending</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      <select id="add_users" name="add_to_event[]" multiple="multiple" style="width: 175px;">
+        <%= options_from_collection_for_select @event.users, 'id', 'full_name' %>
+      </select>
+    </td>
+    <td valign="middle" align="center">
+      <input type="button" name="add_user" value=" &lt;&lt;&lt;" style="width: 50px;" onClick="MoveOption(document.getElementById('remove_users'), document.getElementById('add_users') )">
+      <br/>
+      <input type="button" name="remove_user" value="&gt;&gt;&gt;" style="width: 50px;" onClick="MoveOption(document.getElementById('add_users'), document.getElementById('remove_users') )">
+    </td>
+    <td>
+      <select id="remove_users" name="remove_from_event[]" multiple="multiple" style="width: 175px;">
+        <%= options_from_collection_for_select @event.users_not_attending, 'id', 'full_name' %>
+      </select>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<% end %>

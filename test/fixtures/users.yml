@@ -1,0 +1,27 @@
+quentin:
+  id: 1
+  login: quentin
+  first_name: quen
+  last_name: tin
+  email: quentin@example.com
+  salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd
+  crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+  is_active: 1
+  can_manage_users: 1
+  can_manage_content: 1
+  created_at: <%= 5.days.ago.to_s :db %>
+
+
+aaron:
+  id: 2
+  login: aaron
+  first_name: aa
+  last_name: ron
+  email: aaron@example.com
+  salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd
+  crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+  is_active: 1
+  can_manage_users: 1
+  can_manage_content: 1
+  created_at: <%= 1.days.ago.to_s :db %>
+

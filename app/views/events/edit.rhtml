@@ -1,0 +1,11 @@
+<h1>Editing event</h1>
+
+<%= error_messages_for :event %>
+
+<% form_for(:event, :url => event_path(@event), :html => { :method => :put, :onsubmit => "SelectAll(document.getElementById('remove_users')); SelectAll(document.getElementById('add_users'))" }) do |f| %>
+	<%= render :partial => 'form', :locals => { :f => f } %>
+	<%= submit_tag "Update" %>
+<% end %>
+
+<%= link_to 'Show', event_path(@event) %> |
+<%= link_to 'Back', events_path %>
