@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def index     
      # set the default value for the clear button           
      params[:clear] = "" unless params[:clear]
+     params[:sort] = "first_name_asc" unless params[:sort]     
      #params[:filter] = {} unless params[:filter]
      
      # save the model names for use by the views (filter & sort)
