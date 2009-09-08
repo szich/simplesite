@@ -20,6 +20,19 @@ module ApplicationHelper
   end
   
   def current_user_attending?(event)
-	  current_user.events.include?(event)
+    Attendee.find_by_event_id_and_user_id(event.id, current_user.id)
   end
+  
+  def display_attending_status(event)
+    attendance = current_user_attending?(event)
+    
+    if attendance == nil
+      "You have yet to decied if you are going to attend this event."
+    elsif attendance.attending? == true
+      "You are attending this event."
+    elsif attendance.attending? == false
+      "You are not attending this event."
+    end    
+  end
+  
 end

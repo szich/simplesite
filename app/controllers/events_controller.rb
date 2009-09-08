@@ -66,8 +66,7 @@ class EventsController < ApplicationController
   
   def signup
     event = Event.find(params[:id])
-    current_user.events << event
-    current_user.save
+    Attendee.attend_event(event, current_user)
     
     flash[:alert_good] = "You sucessfully signed up to attend this event."
     redirect_to event_url(event)
@@ -75,8 +74,7 @@ class EventsController < ApplicationController
 
   def regrets
     event = Event.find(params[:id])
-    current_user.events.delete(event)
-    current_user.save
+    Attendee.cant_attend_event(event, current_user)  
     
     flash[:alert_good] = "You are no longer signed up to attend this event."
     redirect_to event_url(event)

@@ -2,7 +2,8 @@ require 'digest/sha1'
 require 'vpim/vcard'
 
 class User < ActiveRecord::Base
-  has_and_belongs_to_many :events
+  has_many :attendees
+  has_many :events, :through => :attendees
   belongs_to :discipline
   
   # Virtual attribute for the unencrypted password

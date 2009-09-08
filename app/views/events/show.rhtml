@@ -1,10 +1,16 @@
 <h1 style="margin-bottom: 2px;"><%= @event.name %></h1>
 
 <div id="pull_quote" style="float: right;">
-<% if current_user_attending?(@event) %>
+<% attendance = current_user_attending?(@event) %>
+<% if attendance == nil  %>
+	Do you plan to attend this event?<br/>
+	<%= link_to "Yes, I'll be there", signup_event_path, :method => :post %> | 
+	<%= link_to "No, I can't make it", regrets_event_path, :method => :post %> 
+
+<% elsif attendance.attending? == true %>
 	You are signed up to attend this event.<br /> <%= link_to 'Click here if you can no longer attend', regrets_event_path, :method => :post %>
-<% else %>
-	You have not yet signed up to attend this event.<br /> <%= link_to 'Click here to sign up now', signup_event_path, :method => :post %>
+<% elsif attendance.attending? == false %>
+	You have chosen not to attend this event.<br /> <%= link_to 'Click here if you would like to attend.', signup_event_path, :method => :post %>
 <% end %>
 </div>
 
@@ -77,7 +83,7 @@
 				<tbody>
 			  <tr>
 			    <td>
-			    	<%= render :partial => 'user_list', :locals => {:user_list => @event.users} %>
+			    	<%= render :partial => 'user_list', :locals => {:user_list => @event.users_attending} %>
 			    </td>
 			  </tr>
 			</tbody>
@@ -88,7 +94,7 @@
 		<td>
 			
 			<table id="data_list" width="95%">
-			  <caption>Not Attending</caption>
+			  <caption>Unable to Attend</caption>
 			  <thead>
 			  <tr><th style="width: 150px;">Name</th></tr>
 			  </thead>
@@ -96,6 +102,23 @@
 			  <tr>
 			    <td>
 						<%= render :partial => 'user_list', :locals => {:user_list => @event.users_not_attending} %>
+					</td>
+			  </tr>
+
+			</table>
+			
+		</td>
+		<td>
+			
+			<table id="data_list" width="95%">
+			  <caption>Has Not Decided</caption>
+			  <thead>
+			  <tr><th style="width: 150px;">Name</th></tr>
+			  </thead>
+
+			  <tr>
+			    <td>
+						<%= render :partial => 'user_list', :locals => {:user_list => @event.undecided_users} %>
 					</td>
 			  </tr>
 

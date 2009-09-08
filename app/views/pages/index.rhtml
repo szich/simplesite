@@ -10,7 +10,7 @@
 	<p>
 		<strong><%= event.held_on.to_s(:standard) %> at <%= event.full_address %></strong><br />
 		<%= truncate(event.description, 500) %><br />
-		<span class="soft_fade">You have <%= current_user_attending?(event) ? '' : 'not'%> registered to attend.</span>
+		<span class="soft_fade"><%= display_attending_status(event) %></span>
 	</p>
 	<% end -%></div>
 
