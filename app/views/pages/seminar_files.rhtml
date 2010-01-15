@@ -1,0 +1,49 @@
+<h1>Annual Seminar Files</h1>
+
+
+<p>This page contains the files associated with our Annual Seminar.</p>
+
+<% if @allowed %>
+	<p><strong>Shawn Wolf</strong>
+	<ol> 
+		<li>
+			Certain exhibits addressing the complexities associated with a U.S. Person beneficiary of a foreign trust and/or estate.
+			<ul><li><a href="/files/WOLF_Item_1.pdf">Download</a>, <a href="/files/WOLF_Item_1_Exhibit_A.pdf">Exhibit A</a>, <a href="/files/WOLF_Item_1_Exhibit_B.pdf">Exhibit B</a>, <a href="/files/WOLF_Item_1_Exhibit_C.pdf">Exhibit C</a></li></ul>
+		</li>
+		<li>
+			An outline of complexities when dealing with the Qualified Domestic Trust U.S. estate tax marital deduction.
+			<ul><li><a href="/files/WOLF_Item_2.pdf">Download</a></li></ul>
+		</li>
+		<li>
+			An outline discussing the “not so obvious” aspects of residency and domicile.
+			<ul><li><a href="/files/WOLF_Item_3.pdf">Download</a></li></ul>			
+		</li>
+		<li>
+			A summary of certain pre-immigration planning techniques and issues.
+			<ul><li><a href="/files/WOLF_Item_4.pdf">Download</a></li></ul>			
+		</li>
+		<li>
+			An overview of the §877 and §2801 expatriation provisions.
+			<ul><li><a href="/files/WOLF_Item_5.pdf">Download</a></li></ul>			
+		</li>
+		<li>
+			A "7 column chart" relating to foreign investment in U.S. real estate.
+			<ul><li><a href="/files/WOLF_Item_6.pdf">Download</a></li></ul>			
+		</li>
+	</ol>	
+	</p>
+
+<% else %>
+	<% form_for('login', :action => "seminar_files") do |f|  %>
+
+	  <p>
+			Please enter the password you were give at the seminar in order to access the seminar files.<br/>
+			<b>Password</b> <%= f.text_field :password %> <%= submit_tag "Login" %>
+		</p>
+	<% end %>
+
+<% end %>
+
+
+
+
