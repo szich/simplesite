@@ -4,6 +4,12 @@
 
 <% form_for(:user, :url => user_path(@user), :html => { :method => :put }) do |f| %>
 	<%= render :partial => 'form', :locals => { :f => f } %>	
+	
+	<% if can_manage_users? %>
+		<h3 style="margin-bottom: 2px;">Login Preferences</h3>
+		<%= render :partial => 'login_preferences', :locals => {:f => f} %>
+	<% end %>	
+	
   <p style="margin-top: 10px;"><%= submit_tag "Update" %></p>
 <% end %>
 
