@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   before_filter :can_manage_content_required, :except => [:index, :show, :seminar_files]
-  
+
   # GET /pages
   # GET /pages.xml
   def index
@@ -13,10 +13,15 @@ class PagesController < ApplicationController
       format.xml  { render :xml => @pages.to_xml }
     end
   end
-  
+
   def seminar_files
-    session[:can_see_seminar_files] = true if request.post? && params[:login] && (params[:login][:password].downcase == 'changeme!')    
+    session[:can_see_seminar_files] = true if request.post? && params[:login] && (params[:login][:password].downcase == 'changeme!')
     @allowed = session[:can_see_seminar_files]
+  end
+
+  def seminar_files_2011
+    session[:can_see_seminar_files_2011] = true if request.post? && params[:login] && (params[:login][:password].downcase == 'changeme!')
+    @allowed = session[:can_see_seminar_files_2011]
   end
 
   # GET /pages/1

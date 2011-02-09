@@ -1,0 +1,71 @@
+<h1>2011 Annual Seminar Files</h1>
+
+<p>This page contains the files associated with our Annual Seminar.</p>
+
+<style type="text/css" media="screen">
+  ol {
+    margin-top: 0;
+  }
+</style>
+
+<% if @allowed %>
+
+  <strong>Blattmachr</strong>
+  <ol>
+    <li>Asset Protection - Foreign Trusts Outline for Nassau County Seminar: <a href="/files/BLATTMACHR1Asset_Protection_Foreign_Trusts_Outline_for_Nassau_County_Seminar.pdf">Download</a></li>
+    <li>Asset Protection - The 21st Century Presentation: <a href="/files/BLATTMACHR2Asset_Protection_The_21st_Century_Presentation.pdf">Download</a></li>
+    <li>Alaska Trust Co. January Newsletter: <a href="/files/BLATTMACHR3Alaska_Trust_Co_January_Newsletter.pdf">Download</a></li>
+  </ol>
+
+
+  <strong>Brewer</strong>
+  <ol>
+    <li>Oregon update 2011 Portland EP Seminar: <a href="/files/BREWEROregon_update_2011_Portland_EP_Seminar.pdf">Download</a></li>
+  </ol>
+
+
+  <strong>Donaldson</strong>
+  <ol>
+    <li>Income Tax Aspects of FLPs - 2011: <a href="/files/DONALDSON_Income_Tax_Aspects_of_FLPs_2011.pdf">Download</a></li>
+  </ol>
+
+  <strong>Hoyt</strong>
+  <ol>
+    <li>Portland Whoop Dee Doo: <a href="/files/Hoyt1-Portland-Whoop-Dee-Doo.pdf">Download</a></li>
+    <li>Portland Defined Value Clauses Charitable IRA Rollover: <a href="/files/Hoyt2-Portland-Defined-Value-Clauses-Charitable-IRA-Rollover.pdf">Download</a></li>
+  </ol>
+
+  <strong>Johanson</strong>
+  <ol>
+    <li>Recent Developments Fall 2010: <a href="/files/JOHANSON_Recent_Developments_Fall_2010.pdf">Download</a></li>
+  </ol>
+
+  <strong>Stern</strong>
+  <ol>
+    <li>Outline of Portland Speech: <a href="/files/STERN-Outline_of_Portland_Speech.pdf">Download</a></li>
+  </ol>
+
+  <strong>Tucker</strong>
+  <ol>
+    <li>Estate Planning For Real Estate Owners In Changing Times: <a href="/files/TUCKER-Estate_Planning_For_Real_Estate_Owners_In_Changing_Times.pdf">Download</a></li>
+  </ol>
+
+  <strong>Supplemental materials not included in the seminar binder</strong>
+  <div style="margin-top: 10px;">
+  <strong>Blattmachr</strong>
+  <ol>
+    <li>Carry Over: <a href="/files/Blattmachr_Carry_Over.pdf">Download</a></li>
+    <li>Gift and GST Tax: <a href="/files/Blattmachr_Gift_and_GST_Tax.pdf">Download</a></li>
+  </ol>
+  </div>
+
+<% else %>
+  <% form_for('login', :action => "seminar_files") do |f|  %>
+
+    <p>
+      Please enter the password you were give at the seminar in order to access the seminar files.<br/>
+      <b>Password</b> <%= f.text_field :password %> <%= submit_tag "Login" %>
+    </p>
+  <% end %>
+
+<% end %>
