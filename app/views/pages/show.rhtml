@@ -1,4 +1,6 @@
+<% if @page.name.downcase != "annual seminar" %>
 <h1><%= @page.name %></h1>
+<% end %>
 
 <p><%= @page.body %> <br />
 <%= link_to 'edit', edit_page_path(@page) if can_manage_content? %></p>
