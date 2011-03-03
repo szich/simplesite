@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_filter :can_manage_content_required, :except => [:index, :show, :seminar_files]
+  before_filter :can_manage_content_required, :except => [:index, :show, :seminar_files, :seminar_files_2011]
 
   # GET /pages
   # GET /pages.xml
