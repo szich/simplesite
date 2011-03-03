@@ -1,6 +1,16 @@
-<h1>2011 Annual Seminar Files</h1>
+<h1>2011 Annual Seminar Resources</h1>
 
-<p>This page contains the files associated with our Annual Seminar.</p>
+<h2>Videos</h2>
+
+<ul>
+  <li><a href="http://vimeo.com/20579768?height=480&width=720" rel="prettyPhoto">Stanley Johanson</a></li>
+  <li><a href="http://vimeo.com/20577365?height=480&width=720" rel="prettyPhoto">Christopher Hoyt</a></li>
+  <li><a href="http://vimeo.com/20576734?height=480&width=720" rel="prettyPhoto">Stefan Tucker</a></li>
+  <li><a href="http://vimeo.com/20574952?height=480&width=720" rel="prettyPhoto">Sam Donaldson and Marc Stern</a></li>
+  <li><a href="http://vimeo.com/20573034?height=480&width=720" rel="prettyPhoto">June Flores and Jon Blattmacher</a></li>
+</ul>
+
+<h2>Files</h2>
 
 <style type="text/css" media="screen">
   ol {
@@ -59,6 +69,11 @@
   </ol>
   </div>
 
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $("a[rel^='prettyPhoto']").prettyPhoto();
+    });
+  </script>
 <% else %>
   <% form_for('login', :action => "seminar_files") do |f|  %>
 
